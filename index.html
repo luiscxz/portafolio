@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">DataLAGO</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#recursos" onclick="seleccionar()">RECURSOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>Luis García</h1>
+            <h2>Big Data | Data scientist  | Ingeniero Oceanográfico</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Luis García.</span> Máster en Ciencia de Datos y Big Data. Me apasiona aplicar técnicas estadísticas y avanzadas como Machine Learning y Deep Learning para resolver problemas complejos de la vida real. Mi enfoque se centra en comprender las necesidades de los clientes y empresas, identificar oportunidades para solucionar problemas mediante el análisis de datos, y desarrollar soluciones innovadoras que agreguen valor e impulsen la toma de decisiones informadas.</p>
+            
+            <p><span>Máster Big Data, Data Science y analítica avanzada</span><br> Durante esta maestría, he adquirido un profundo conocimiento en el uso de herramientas y tecnologías clave en Big Data. He adquirido conocimiento practico en procesamiento batch y streaming, almacenamiento y gestión de la información, y procesamiento escalable utilizando Hadoop, Hive, Spark, MapReduce, entre otros.
+                Además, he profundizado en algoritmos de Machine Learning para tareas como clasificación, clusterización, regresión lineal, y métodos ensamblados. En el ámbito del Deep Learning, he desarrollado competencias para entrenar redes neuronales aplicadas a visión computacional, análisis de series de tiempo, análisis de sentimientos y modelos generativos.
+                </p>
+    
+            <p><span>Formación en ingeniería oceanográfica</span><br> 
+                Como ingeniero oceanográfico, combino física, matemáticas y programación para comprender los océanos y la atmósfera. 
+                Mi trabajo incluye:
+            </p>
+            <ul style="list-style-type: disc; margin-left: 20px; padding-left: 20px;">
+                <li>Configuración de equipos ADCP, CTD, Sensores de presión, estaciones meteorológicas, roseta Sea-Bird, ecosondas, drones y GPS diferencial para capturar datos de variables como temperatura, salinidad, presión, pH, clorofila, vientos, corrientes, batimetrías, topografías, oleaje y ortofotos.</li>
+                <li>Preprocesamiento y análisis de datos usando Python, Matlab, R, Hypack, ArcGIS y Pix4D.</li>
+                <li>Almacenamiento de datos en bases de datos como PostgreSQL para su uso en modelos numéricos o algoritmos de Machine Learning.</li>
+            </ul><br>
+    
+            <p><span>Todos estos conocimientos me permiten hacer ciencia de datos en áreas como salud, seguridad, oceanografía y negocios. Así mismo me emociona saber que este conocimiento es más arte que ciencia. </span><br> </p>
+       
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +573008310285
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            luisgarcia.oq95@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Neiva-Huila, Colombia
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Científico de Datos</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        
+            <a href="https://drive.google.com/file/d/1dKqZgI3D8eJyyXfch6-p-K6vE9p7UDEq/view?usp=drive_link" download="Nombre_del_Archivo.pdf">
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="skill">
+                        <span>Matlab</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python para ciencia de datos</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>ArcGIS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Hadoop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Hive</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Spark</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Responsabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Elaboración de informes</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM  AQUI SE MUESTRA EL -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Máster en Big Data, Data scientist y Analítica avanzada</h4>
+                        <span class="casa">NAXER | Universidad a distancia de Madrid (UDIMA)</span>
+                        <span class="fecha">2023 - 2025</span>
+                        <p>Máster con enfoque práctico, donde aprendí ha aplicar herramientas del Big Data (Hadoop, Hive, Spark, Apache Kafka, Nifi, entre otras) y 
+                            entrenar modelos de machine y deep learning para entrenar redes neuronales aplicadas a visión computacional, 
+                            análisis de series de tiempo, análisis de sentimientos y modelos generativos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniero Oceanográfico</h4>
+                        <span class="casa">Universidad de Antioquia</span>
+                        <span class="fecha">2017 - 2023</span>
+                        <p>Como ingeniero oceanográfico tengo formación en física, matemáticas, programación y procesamiento de datos.
+                            Mi formación académica me permite analizar grandes volúmenes de datos, como son series de tiempo, datos topográficos,
+                            batimétricos, ortofotos, imágenes satelitales y masas de agua. Así mismo, tengo experiencia planificando salidas de campo,
+                            configurando sensores para la adquisición de datos en tiempo real y el procesamiento de los mismo.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Trabajo de grado</h4>
+                        <span class="casa">NAXER - Centro de estudios superiores</span>
+                        <span class="fecha">Nov 2024 - Feb 2025</span>
+                        <p>Desarrollé una solución integral para el análisis de datos de ventas históricas de una cadena 
+                            de tiendas minoristas, la cual incluyó la creación de un modelo de Machine Learning (ML) 
+                            para predecir ingresos futuros y el diseño de un panel interactivo en Power BI que 
+                            permite visualizar los resultados de manera clara y efectiva. Esta solución brinda a 
+                            los usuarios la capacidad de analizar patrones de ventas pasadas, realizar proyecciones 
+                            de ingresos futuros y explorar los datos de forma dinámica a través de informes interactivos 
+                            en Power BI, optimizando así la toma de decisiones estratégicas</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Científico de datos con conocimientos en oceanografía</h4>
+                        <span class="casa">Grupo Intendencia regional DIMAR</span>
+                        <span class="fecha">Feb 2023 - Dic 2023</span>
+                        <p>Lideré la ejecución de procesos de extracción, transformación y carga (ETL) para la gestión de 
+                            datos oceanográficos. Además, implementé y configuré sensores oceanográficos para el monitoreo 
+                            del fenómeno de El Niño 2023, logrando optimizar la recolección de datos en un 50%. Utilicé 
+                            Python para entrenar y validar modelos de machine learning, aplicados al análisis de patrones 
+                            climáticos y oceanográficos. Asimismo, generé informes y reportes detallados basados en el análisis de datos 
+                            recopilados durante los cruceros internacionales que estudiaron el fenómeno de El Niño en la 
+                            cuenca del Pacífico suramericano, contribuyendo con el desarrolo de algoritmo que automatizarón el la extracción,
+                            tranformación, y carga de las variables estudiadas en este fenómeno.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO EN DONDE SE MUESTRAN LOS TRABAJOS MÁS RELEVANTES -->
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto" onclick="abrirModal(0)">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto" onclick="abrirModal(1)">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <!-- Agrega más proyectos aquí -->
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Ventana Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar">&times;</span>
+            
+            <!-- Contenedor para las imágenes con botones de navegación -->
+            <div class="modal-imagenes">
+                <button id="prev-img" class="nav-btn">←</button>
+                <img id="modal-img" src="" alt="Proyecto">
+                <button id="next-img" class="nav-btn">→</button>
+            </div>
+
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-descripcion"></p>
+            <a id="modal-enlace" href="#" target="_blank">Ver código</a>
+        </div>
+    </div>
+    
+
+
+    <!-- SECCION recursos -->
+    <section id="recursos" class="recursos">
+        <div class="contenido-seccion">
+            <h2>RECURSOS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Nicaragua 159, San Rafael Mza
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 2384 - 4343443 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: cw@example.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
