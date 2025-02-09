@@ -970,15 +970,21 @@ footer .arriba{
 
 @media (max-width: 768px) {
     .modal-contenido {
-        grid-template-columns: 1fr; /* En móviles, la imagen y el texto estarán en una sola columna */
-        grid-template-rows: auto auto; /* Las filas se ajustan automáticamente */
+        display: flex;         /* Usa flexbox en móviles */
+        flex-direction: column; /* Apila los elementos en columna */
+        align-items: center;    /* Centra los elementos */
+        gap: 15px;              /* Espaciado entre imagen y texto */
     }
 
     .modal-galeria {
-        order: 1; /* Mantiene la imagen en la parte superior */
+        width: 100%; /* La imagen ocupa todo el ancho */
+        display: flex;
+        justify-content: center;
     }
 
     .modal-texto {
-        order: 2; /* Mueve el texto debajo de la imagen */
+        width: 100%; /* Asegura que el texto ocupe todo el ancho */
+        text-align: center; /* Centra el texto */
+        padding: 15px;
     }
 }
