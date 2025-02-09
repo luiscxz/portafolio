@@ -340,26 +340,32 @@
     </section>
 
     <!-- SECCION PORTFOLIO EN DONDE SE MUESTRAN LOS TRABAJOS MÁS RELEVANTES -->
-    <!-- SECCION PORTFOLIO -->
     <section id="portfolio" class="portfolio">
         <div class="contenido-seccion">
             <h2>PORTFOLIO</h2>
             <div class="galeria">
                 <div class="proyecto" onclick="abrirModal(0)">
-                    <img src="img/p1.jpg" alt="">
+                    <img src="img/master/modelos.png"" alt="">
                     <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
+                        <h3>Trabajo final de Máster</h3>
+                        <p>Machine Learning</p>
                     </div>
                 </div>
                 <div class="proyecto" onclick="abrirModal(1)">
-                    <img src="img/p2.jpg" alt="">
+                    <img src="img/PIMECLA/Zonas de riesgo.jpg" alt="">
                     <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
+                        <h3>Análisis de datos</h3>
+                        <p>Geoprocesamiento y series de tiempo</p>
                     </div>
                 </div>
                 <!-- Agrega más proyectos aquí -->
+                <div class="proyecto" onclick="abrirModal(2)">
+                    <img src="img/riohobo/Curvas de nivel.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Análisis de datos</h3>
+                        <p>Geoprocesamiento</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -369,17 +375,21 @@
     <div id="modal" class="modal">
         <div class="modal-contenido">
             <span class="cerrar">&times;</span>
-            
+    
             <!-- Contenedor para las imágenes con botones de navegación -->
-            <div class="modal-imagenes">
-                <button id="prev-img" class="nav-btn">←</button>
+            <div class="modal-galeria">
+                <button id="prev-img" class="modal-prev">←</button>
                 <img id="modal-img" src="" alt="Proyecto">
-                <button id="next-img" class="nav-btn">→</button>
+                <button id="next-img" class="modal-next">→</button>
             </div>
-
-            <h2 id="modal-titulo"></h2>
-            <p id="modal-descripcion"></p>
-            <a id="modal-enlace" href="#" target="_blank">Ver código</a>
+    
+            <!-- Contenedor de texto -->
+            <div class="modal-texto">
+                <h2 id="modal-titulo"></h2>
+                <p id="modal-descripcion"></p>
+                <p id="modal-herramientas"></p>
+                <a id="modal-enlace" href="#" target="_blank">Ver código</a>
+            </div>
         </div>
     </div>
     

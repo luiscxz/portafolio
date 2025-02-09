@@ -44,12 +44,12 @@ window.onscroll = function(){
     efectoHabilidades();
 } 
 // Esperar a que el DOM esté completamente cargado antes de acceder a los elementos
-// Esperar a que el DOM esté completamente cargado antes de acceder a los elementos
 document.addEventListener("DOMContentLoaded", () => {
     const modal = document.getElementById("modal");
     const modalImg = document.getElementById("modal-img");
     const modalTitulo = document.getElementById("modal-titulo");
     const modalDescripcion = document.getElementById("modal-descripcion");
+    const modalHerramientas = document.getElementById("modal-herramientas");
     const modalEnlace = document.getElementById("modal-enlace");
     const cerrarModal = document.querySelector(".cerrar");
     const prevImgBtn = document.getElementById("prev-img");
@@ -57,22 +57,73 @@ document.addEventListener("DOMContentLoaded", () => {
     const proyectosElementos = document.querySelectorAll(".proyecto");
 
     // Verificación de que los elementos existen antes de manipularlos
-    if (!modal || !modalImg || !modalTitulo || !modalDescripcion || !modalEnlace || !cerrarModal || !prevImgBtn || !nextImgBtn) {
+    if (!modal || !modalImg || !modalTitulo || !modalDescripcion || !modalHerramientas || !modalEnlace || !cerrarModal || !prevImgBtn || !nextImgBtn) {
         console.error("Uno o más elementos del modal no se encontraron.");
         return;
     }
 
     const proyectos = [
         {
-            imagenes: ["D:/imagenes/para_portafolio/PIMECLA/Zonas de riesgo.jpg", "img/p1-2.jpg", "img/p1-3.jpg"], 
-            titulo: "Diseño Creativo 1",
-            descripcion: "Proyecto de fotografía con un diseño moderno y minimalista.",
+            imagenes: ["img/master/modelos.png",
+                "img/master/ventastotales.png",  
+                "img/master/distribuciondevariables.png",
+                "img/master/depuradosLDVAPV.png",
+                "img/master/AtipicosLDVAPV.png",
+                "img/master/analisisdeventasporciudad.png"], 
+            titulo: "Trabajo de Máster",
+            descripcion: `Este estudio se centró en la predicción de ventas semanales de 45 tiendas ubicadas en Estados Unidos, 
+            utilizando diversos modelos de aprendizaje automático, como regresión lineal, árboles de decisión, vecinos más 
+            cercanos y máquinas de soporte vectorial, implementados en Python. Como resultado, se generó un informe interactivo 
+            en Power BI que extrae, transforma y carga datos para mostrar las estadísticas regionales, mensuales, trimestrales y anuales junto con las predicciones obtenidas de los diferentes 
+            modelos. Este informe facilita la visualización de los datos y contribuye a la toma de decisiones informadas.`,
+            herramientas:"<b>SQL</b>, <b>Python</b>, <b>Power BI</b>, <b>ETL</b>.",
             enlace: "https://github.com/tuusuario/proyecto1"
         },
         {
-            imagenes: ["img/p2-1.jpg", "img/p2-2.jpg", "img/p2-3.jpg"], 
-            titulo: "Diseño Creativo 2",
-            descripcion: "Exploración de colores y texturas en la fotografía urbana.",
+            imagenes: ["img/PIMECLA/Zonas de riesgo.jpg", 
+                "img/PIMECLA/Levantamiento.jpg", 
+                "img/PIMECLA/batimetria.jpg",
+                "img/PIMECLA/equipos.jpg",
+                "img/PIMECLA/serie1.png",
+                "img/PIMECLA/serie.jpg",
+                ], 
+            titulo: "PIMECLA",
+            descripcion: `En el <b>Programa Integral para el Monitoreo y Mitigación de la Erosión Costera en el 
+            Litoral Antioqueño</b> (PIMECLA), fui contratado para generar conocimiento científico y técnico sobre 
+            la erosión costera en la región. Mis funciones incluyeron::
+            <br>
+                
+            • <b>Series de tiempo:</b> Extracción, transformación y carga de datos sobre nivel del mar, vientos y temperatura.<br>
+            • <b>Procesamiento de datos:</b> Integración y transformación de información de GPS, 
+            sensores remotos, imágenes satelitales y drones, garantizando calidad y consistencia.<br>
+            • <b>Análisis e informes:</b> Identificación de tendencias y patrones mediante análisis estadísticos, 
+            elaborando informes técnicos para la toma de decisiones.<br>
+            • <b>Colaboración interdisciplinaria:</b> Trabajo con equipos multidisciplinarios para interpretar resultados 
+            y recomendar estrategias de mitigación.<br>`,
+            herramientas:"<b>SQL</b>, <b>Python</b>, <b>ArcGIS</b>, <b>Matlab</b>, <b>Pix4D</b>, <b>Power BI</b>, <b>ETL</b>.",
+            enlace: "https://github.com/tuusuario/proyecto2"
+        },
+        {
+            imagenes: ["img/riohobo/Curvas de nivel.jpg", 
+                "img/riohobo/area de estudio.jpg",
+                "img/riohobo/levantamiento.jpg", 
+                "img/riohobo/Curvas de nivel2.jpg",
+                "img/riohobo/perfiles.jpg",
+                ], 
+            titulo: "PIMECLA2",
+            descripcion: `En el <b>Programa Integral para el Monitoreo y Mitigación de la Erosión Costera en el 
+            Litoral Antioqueño</b> (PIMECLA), fui contratado para generar conocimiento científico y técnico sobre 
+            la erosión costera en la región. Mis funciones incluyeron::
+            <br>
+                
+            • <b>Series de tiempo:</b> Extracción, transformación y carga de datos sobre nivel del mar, vientos y temperatura.<br>
+            • <b>Procesamiento de datos:</b> Integración y transformación de información de GPS, 
+            sensores remotos, imágenes satelitales y drones, garantizando calidad y consistencia.<br>
+            • <b>Análisis e informes:</b> Identificación de tendencias y patrones mediante análisis estadísticos, 
+            elaborando informes técnicos para la toma de decisiones.<br>
+            • <b>Colaboración interdisciplinaria:</b> Trabajo con equipos multidisciplinarios para interpretar resultados 
+            y recomendar estrategias de mitigación.<br>`,
+            herramientas:"<b>SQL</b>, <b>Python</b>, <b>ArcGIS</b>, <b>Matlab</b>, <b>Pix4D</b>, <b>Power BI</b>, <b>ETL</b>.",
             enlace: "https://github.com/tuusuario/proyecto2"
         }
     ];
@@ -92,7 +143,10 @@ document.addEventListener("DOMContentLoaded", () => {
         modal.classList.add("show");
 
         modalTitulo.textContent = proyectos[index].titulo;
-        modalDescripcion.textContent = proyectos[index].descripcion;
+        modalDescripcion.innerHTML = proyectos[index].descripcion.trim();;
+        modalHerramientas.innerHTML = proyectos[index].herramientas 
+            ? `<strong>Herramientas:</strong> ${proyectos[index].herramientas}` 
+            : "";
         modalEnlace.href = proyectos[index].enlace;
         
         actualizarImagen(); // Mostrar la primera imagen
