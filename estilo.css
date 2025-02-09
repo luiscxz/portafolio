@@ -990,7 +990,7 @@ footer .arriba{
         width: 100%; /* Ajusta la imagen al ancho del contenedor */
         max-height: 30vh; /* Reduce la altura máxima para que no se comprima */
         object-fit: contain; /* Mantiene la proporción sin cortes */
-        border-radius: 5px; /* Opcional: redondea las esquinas */
+        border-radius: 15px; /* Opcional: redondea las esquinas */
         padding: 5px; /* Espacio entre imágenes */
         background-color: white; /* Fondo opcional para mejorar visibilidad */
     }
