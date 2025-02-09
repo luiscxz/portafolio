@@ -567,7 +567,36 @@ html{
 .portfolio .galeria .proyecto:hover .overlay h3 {
     margin-bottom: 0;
 }
+@media (max-width: 768px) {
+    .modal-contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        justify-content: center;
+    }
 
+    .modal-galeria {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .modal-galeria img {
+        width: 100%; /* Ajusta la imagen al ancho del contenedor */
+        max-height: 30vh; /* Reduce la altura máxima para que no se comprima */
+        object-fit: contain; /* Mantiene la proporción sin cortes */
+    }
+
+    .modal-texto {
+        width: 90%; /* Reduce el ancho del texto */
+        text-align: justify; /* Justifica el texto */
+        padding: 10px;
+        max-height: 40vh; /* Limita la altura del texto para evitar que sea demasiado largo */
+        overflow-y: auto; /* Agrega desplazamiento si el texto es muy largo */
+    }
+}
 }
 /* SECCION RECURSOS */
 .recursos{
@@ -968,34 +997,5 @@ footer .arriba{
     outline: 2px solid #007bff;
 }
 
-@media (max-width: 768px) {
-    .modal-contenido {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        justify-content: center;
-    }
 
-    .modal-galeria {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .modal-galeria img {
-        width: 100%; /* Ajusta la imagen al ancho del contenedor */
-        max-height: 30vh; /* Reduce la altura máxima para que no se comprima */
-        object-fit: contain; /* Mantiene la proporción sin cortes */
-    }
-
-    .modal-texto {
-        width: 90%; /* Reduce el ancho del texto */
-        text-align: justify; /* Justifica el texto */
-        padding: 10px;
-        max-height: 40vh; /* Limita la altura del texto para evitar que sea demasiado largo */
-        overflow-y: auto; /* Agrega desplazamiento si el texto es muy largo */
-    }
-}
 
