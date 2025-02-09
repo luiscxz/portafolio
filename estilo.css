@@ -969,23 +969,16 @@ footer .arriba{
 }
 
 @media (max-width: 768px) {
-    .portfolio .galeria {
-        flex-direction: column; /* Apila los elementos en columna */
-        align-items: center;
+    .modal-contenido {
+        grid-template-columns: 1fr; /* En móviles, la imagen y el texto estarán en una sola columna */
+        grid-template-rows: auto auto; /* Las filas se ajustan automáticamente */
     }
 
-    .portfolio .galeria .proyecto {
-        width: 90%; /* Ajusta el tamaño para ocupar más espacio en móviles */
-        display: flex;
-        flex-direction: column;
+    .modal-galeria {
+        order: 1; /* Mantiene la imagen en la parte superior */
     }
 
-    .portfolio .galeria .proyecto .overlay {
-        position: relative; /* Permite que el texto aparezca debajo */
-        opacity: 1; /* Hace que el texto siempre sea visible */
-        background: none; /* Elimina el fondo oscuro */
-        color: white;
-        text-align: center;
-        padding: 10px;
+    .modal-texto {
+        order: 2; /* Mueve el texto debajo de la imagen */
     }
 }
