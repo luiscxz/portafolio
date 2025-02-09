@@ -980,19 +980,14 @@ footer .arriba{
     .modal-galeria {
         width: 100%;
         display: flex;
-        flex-wrap: wrap; /* Permite que las imágenes se acomoden mejor */
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 10px; /* Agrega separación entre imágenes */
-        padding: 10px; /* Agrega espacio alrededor de la galería */
     }
 
     .modal-galeria img {
         width: 100%; /* Ajusta la imagen al ancho del contenedor */
         max-height: 30vh; /* Reduce la altura máxima para que no se comprima */
         object-fit: contain; /* Mantiene la proporción sin cortes */
-        border-radius: 15px; /* Opcional: redondea las esquinas */
-        padding: 5px; /* Espacio entre imágenes */
-        background-color: white; /* Fondo opcional para mejorar visibilidad */
     }
 
     .modal-texto {
