@@ -110,20 +110,45 @@ document.addEventListener("DOMContentLoaded", () => {
                 "img/riohobo/Curvas de nivel2.jpg",
                 "img/riohobo/perfiles.jpg",
                 ], 
-            titulo: "PIMECLA2",
-            descripcion: `En el <b>Programa Integral para el Monitoreo y Mitigación de la Erosión Costera en el 
-            Litoral Antioqueño</b> (PIMECLA), fui contratado para generar conocimiento científico y técnico sobre 
-            la erosión costera en la región. Mis funciones incluyeron::
+            titulo: "Levantamiento topográfico",
+            descripcion: `Realicé levantamiento topográfico utilizando tecnología de GPS diferencial y un dron. 
+            El procesamiento de los datos se llevó a cabo de la siguiente manera:
             <br>
                 
-            • <b>Series de tiempo:</b> Extracción, transformación y carga de datos sobre nivel del mar, vientos y temperatura.<br>
-            • <b>Procesamiento de datos:</b> Integración y transformación de información de GPS, 
-            sensores remotos, imágenes satelitales y drones, garantizando calidad y consistencia.<br>
-            • <b>Análisis e informes:</b> Identificación de tendencias y patrones mediante análisis estadísticos, 
-            elaborando informes técnicos para la toma de decisiones.<br>
-            • <b>Colaboración interdisciplinaria:</b> Trabajo con equipos multidisciplinarios para interpretar resultados 
-            y recomendar estrategias de mitigación.<br>`,
-            herramientas:"<b>SQL</b>, <b>Python</b>, <b>ArcGIS</b>, <b>Matlab</b>, <b>Pix4D</b>, <b>Power BI</b>, <b>ETL</b>.",
+            • <b>Fotogrametría:</b> Se procesaron las imágenes capturadas con el dron para generar un Modelo Digital 
+            de Elevación (DEM) del terreno, el cual fue ortorectificado y georreferenciado con precisión.<br>
+            • <b>Procesamiento de datos:</b> A partir de los datos obtenidos con el GPS diferencial, se generaron 
+            las curvas de nivel del terreno y se elaboraron perfiles transversales del talud, lo que permitió identificar 
+            los ángulos óptimos para su perfilado.<br>
+            • <b>Análisis e informes:</b> Se realizaron análisis estadísticos y topográficos, culminando en un informe técnico
+             que detalló los criterios para el perfilado del talud y el volumen de material a remover.<br>
+            • <b>Colaboración interdisciplinaria:</b> Trabajé en conjunto con equipos multidisciplinarios para interpretar los resultados
+             y recomendar estrategias efectivas para el perfilado del talud..<br>`,
+            herramientas:"<b>SQL</b>, <b>Python</b>, <b>ArcGIS</b>, <b>Pix4D</b>, <b>ETL</b>.",
+            enlace: "https://github.com/tuusuario/proyecto2"
+        },
+        {
+            imagenes: ["img/erfen/masas de agua.png",
+                "img/erfen/profundidades_elegidas.png", 
+                "img/erfen/Presion media nivel del mar.png",
+                "img/erfen/vientos.png", 
+                "img/erfen/TSM.png",
+                "img/erfen/SerieTempSal.png",
+                ], 
+            titulo: "Científico de datos (ciencias de la tierra)",
+            descripcion: `En este proyecto fui contratado para aplicar ciencia de datos a variables oceanográficas y atmosféricas 
+            en DIMAR. Mis prinicpales actividades y logros  fueron los siguientes:<br>
+                
+            • <b>Configuración de sensores:</b> Configuré los sensores que usaron para registrar las variables
+             estudias en el Fenómeno EL NIÑO, optimizando en 50% la toma de datos.<br>
+            • <b>ETL:</b> Mediante python automaticé la extracción, tranformación y carga de los datos provenientes de sensores 
+            remotos. Reduciendo el tiempo de procesamiento, errores humanos y se garantizó la precisión y consistencia de los datos, 
+            optimizando significativamente la calidad y eficiencia del procesamiento.<br>
+            • <b>Análisis e informes:</b> Realicé el análisis de los datos recolectados en el Estudio Regional del Fenómeno del Niño (ERFEN) del año 2023, 
+            describiendo la influencia del fenómeno en la cuenca del Pacífico Colombiano.<br>
+            • <b>Machine Learning:</b> Implementé algoritmos de clusterización, logrando identificar 
+            grupos de masas de aguas presentes durante los cruceros.<br>`,
+            herramientas:"<b>SQL</b>, <b>Python</b>, <b>ArcGIS</b>, <b>Matlab</b>, <b>ETL</b>.",
             enlace: "https://github.com/tuusuario/proyecto2"
         }
     ];
@@ -186,4 +211,36 @@ document.addEventListener("DOMContentLoaded", () => {
     window.onload = () => {
         modal.classList.remove("show");
     };
+});
+// enviar correo electrónico
+document.addEventListener("DOMContentLoaded", () => {
+    const formButton = document.querySelector(".contacto button");
+
+    if (formButton) {
+        formButton.addEventListener("click", (event) => {
+            event.preventDefault(); // Evita que el botón recargue la página
+
+            const nombre = document.querySelector('.contacto input[placeholder="Tú Nombre"]').value.trim();
+            const telefono = document.querySelector('.contacto input[placeholder="Número telefónico"]').value.trim();
+            const correo = document.querySelector('.contacto input[placeholder="Dirección de correo"]').value.trim();
+            const tema = document.querySelector('.contacto input[placeholder="Tema"]').value.trim();
+            const mensaje = document.querySelector('.contacto textarea').value.trim();
+
+            if (!nombre || !telefono || !correo || !tema || !mensaje) {
+                alert("Por favor, completa todos los campos.");
+                return;
+            }
+
+            if (!/^\S+@\S+\.\S+$/.test(correo)) {
+                alert("Por favor, ingresa un correo electrónico válido.");
+                return;
+            }
+
+            const mailtoLink = `mailto:lionsgateazul@gmail.com?subject=${encodeURIComponent(tema)}&body=${encodeURIComponent(
+                `Nombre: ${nombre}\nTeléfono: ${telefono}\nCorreo: ${correo}\n\nMensaje:\n${mensaje}`
+            )}`;
+
+            window.location.href = mailtoLink;
+        });
+    }
 });
