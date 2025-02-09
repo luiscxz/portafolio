@@ -967,3 +967,25 @@ footer .arriba{
 .cerrar:focus, .modal-prev:focus, .modal-next:focus {
     outline: 2px solid #007bff;
 }
+
+@media (max-width: 768px) {
+    .portfolio .galeria {
+        flex-direction: column; /* Apila los elementos en columna */
+        align-items: center;
+    }
+
+    .portfolio .galeria .proyecto {
+        width: 90%; /* Ajusta el tamaño para ocupar más espacio en móviles */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio .galeria .proyecto .overlay {
+        position: relative; /* Permite que el texto aparezca debajo */
+        opacity: 1; /* Hace que el texto siempre sea visible */
+        background: none; /* Elimina el fondo oscuro */
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+}
