@@ -970,21 +970,29 @@ footer .arriba{
 
 @media (max-width: 768px) {
     .modal-contenido {
-        display: flex;         /* Usa flexbox en móviles */
-        flex-direction: column; /* Apila los elementos en columna */
-        align-items: center;    /* Centra los elementos */
-        gap: 15px;              /* Espaciado entre imagen y texto */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
 
     .modal-galeria {
-        width: 100%; /* La imagen ocupa todo el ancho */
+        width: 100%;
         display: flex;
         justify-content: center;
     }
 
+    .modal-galeria img {
+        width: 90%; /* Evita que la imagen sea demasiado grande */
+        max-height: 50vh; /* Limita la altura para evitar que se vea comprimida */
+        object-fit: contain; /* Mantiene la proporción de la imagen sin cortes */
+    }
+
     .modal-texto {
-        width: 100%; /* Asegura que el texto ocupe todo el ancho */
-        text-align: center; /* Centra el texto */
-        padding: 15px;
+        width: 90%; /* Reduce el ancho del texto para que no ocupe tanto espacio */
+        text-align: justify; /* Justifica el texto para mejor lectura */
+        padding: 10px;
+        max-height: 30vh; /* Limita la altura del texto para que no sea más grande que la imagen */
+        overflow-y: auto; /* Agrega desplazamiento si el texto es demasiado largo */
     }
 }
