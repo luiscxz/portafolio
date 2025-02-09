@@ -970,6 +970,8 @@ footer .arriba{
 
 @media (max-width: 768px) {
     .modal-contenido {
+        grid-template-columns: 1fr; /* En móviles, la imagen y el texto estarán en una sola columna */
+        grid-template-rows: auto auto; /* Las filas se ajustan automáticamente */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -978,6 +980,7 @@ footer .arriba{
     }
 
     .modal-galeria {
+        order: 1; /* Mantiene la imagen en la parte superior */
         width: 100%;
         display: flex;
         justify-content: center;
@@ -990,6 +993,7 @@ footer .arriba{
     }
 
     .modal-texto {
+        order: 2; /* Mueve el texto debajo de la imagen */
         width: 90%; /* Reduce el ancho del texto */
         text-align: justify; /* Justifica el texto */
         padding: 10px;
