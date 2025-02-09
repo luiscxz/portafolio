@@ -974,6 +974,7 @@ footer .arriba{
         flex-direction: column;
         align-items: center;
         gap: 15px;
+        justify-content: center;
     }
 
     .modal-galeria {
@@ -983,16 +984,16 @@ footer .arriba{
     }
 
     .modal-galeria img {
-        width: 90%; /* Evita que la imagen sea demasiado grande */
-        max-height: 50vh; /* Limita la altura para evitar que se vea comprimida */
-        object-fit: contain; /* Mantiene la proporción de la imagen sin cortes */
+        width: 100%; /* Ajusta la imagen al ancho del contenedor */
+        max-height: 40vh; /* Reduce la altura máxima para que no se comprima */
+        object-fit: contain; /* Mantiene la proporción sin cortes */
     }
 
     .modal-texto {
-        width: 90%; /* Reduce el ancho del texto para que no ocupe tanto espacio */
-        text-align: justify; /* Justifica el texto para mejor lectura */
+        width: 90%; /* Reduce el ancho del texto */
+        text-align: justify; /* Justifica el texto */
         padding: 10px;
-        max-height: 30vh; /* Limita la altura del texto para que no sea más grande que la imagen */
-        overflow-y: auto; /* Agrega desplazamiento si el texto es demasiado largo */
+        max-height: 40vh; /* Limita la altura del texto para evitar que sea demasiado largo */
+        overflow-y: auto; /* Agrega desplazamiento si el texto es muy largo */
     }
 }
