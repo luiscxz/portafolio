@@ -967,20 +967,6 @@ footer .arriba{
 .cerrar:focus, .modal-prev:focus, .modal-next:focus {
     outline: 2px solid #007bff;
 }
-@media (max-width: 768px) {
-    .modal-contenido {
-        grid-template-columns: 1fr; /* En móviles, la imagen y el texto estarán en una sola columna */
-        grid-template-rows: auto auto; /* Las filas se ajustan automáticamente */
-    }
-
-    .modal-galeria {
-        order: 1; /* Mantiene la imagen en la parte superior */
-    }
-
-    .modal-texto {
-        order: 2; /* Mueve el texto debajo de la imagen */
-    }
-}
 
 @media (max-width: 768px) {
     .modal-contenido {
