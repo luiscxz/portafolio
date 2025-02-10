@@ -236,7 +236,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
-            const mailtoLink = `mailto:lionsgateazul@gmail.com?subject=${encodeURIComponent(tema)}&body=${encodeURIComponent(
+            const mailtoLink = `mailto:luisgarcia.oq95@gmail.com?subject=${encodeURIComponent(tema)}&body=${encodeURIComponent(
                 `Nombre: ${nombre}\nTeléfono: ${telefono}\nCorreo: ${correo}\n\nMensaje:\n${mensaje}`
             )}`;
 
