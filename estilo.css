@@ -209,6 +209,7 @@ html{
 .sobremi button:hover .overlay{
     width: 100%;
 }
+
 /* SECCION S K I L L S */
 .skills{
     background-color: #252A2E;
@@ -270,13 +271,13 @@ html{
     font-size: 14px;
 }
 /* Estas clases se agregaran dinamicamente mediante javascript  para habilidades técnicas*/
-.skills .skill .matlab{
+.skills .skill .MachineLearning{
     width: 0%;
-    animation: 2s matlab forwards;
+    animation: 2s MachineLearning forwards;
 }
-@keyframes matlab {
+@keyframes MachineLearning {
     0%{width: 0%;}
-    100%{width: 80%;}
+    100%{width: 89%;}
 }
 
 .skills .skill .python{
@@ -297,13 +298,13 @@ html{
     100%{width: 90%;}
 }
 
-.skills .skill .arcgis{
+.skills .skill .DataProcessingAnalysis{
     width: 0%;
-    animation: 2s arcgis forwards;
+    animation: 2s DataProcessingAnalysis forwards;
 }
-@keyframes arcgis {
+@keyframes DataProcessingAnalysis {
     0%{width: 0%;}
-    100%{width: 90%;}
+    100%{width: 100%;}
 }
 /* Estilos para las barras de progreso hadoop */
 .skills .skill .hadoop{
@@ -819,7 +820,6 @@ footer .arriba{
 }
 
 
-/* Estilos de la ventana modal */
 /* Estilos de la ventana modal */
 .modal {
     opacity: 0;

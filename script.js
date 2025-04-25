@@ -21,10 +21,10 @@ function efectoHabilidades(){
     var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
     if(distancia_skills >= 300){
         let habilidades = document.getElementsByClassName("progreso");
-        habilidades[0].classList.add("matlab");
-        habilidades[1].classList.add("python");
-        habilidades[2].classList.add("sql");
-        habilidades[3].classList.add("arcgis");
+        habilidades[0].classList.add("python");
+        habilidades[1].classList.add("sql");
+        habilidades[2].classList.add("MachineLearning");
+        habilidades[3].classList.add("DataProcessingAnalysis");
         habilidades[4].classList.add("hadoop");
         habilidades[5].classList.add("hive");
         habilidades[6].classList.add("spark");
@@ -76,8 +76,8 @@ document.addEventListener("DOMContentLoaded", () => {
             cercanos y máquinas de soporte vectorial, implementados en Python. Como resultado, se generó un informe interactivo 
             en Power BI que extrae, transforma y carga datos para mostrar las estadísticas regionales, mensuales, trimestrales y anuales junto con las predicciones obtenidas de los diferentes 
             modelos. Este informe facilita la visualización de los datos y contribuye a la toma de decisiones informadas.`,
-            herramientas:"<b>SQL</b>, <b>Python</b>, <b>Power BI</b>, <b>ETL</b>.",
-            enlace: "https://github.com/tuusuario/proyecto1"
+            herramientas:"<b>SQL</b>, <b>Python</b>, <b>Power BI</b>, <b>ETL</b>, <b>Machine Learnign</b>.",
+            enlace: "https://github.com/luiscxz/TFM-app/tree/main"
         },
         {
             imagenes: ["img/PIMECLA/Zonas de riesgo.jpg", 
