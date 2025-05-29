@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const proyectos = [
+        // Trabajo de máster (modal 0)
         {
             imagenes: ["img/master/modelos.png",
                 "img/master/ventastotales.png",  
@@ -79,6 +80,36 @@ document.addEventListener("DOMContentLoaded", () => {
             herramientas:"<b>SQL</b>, <b>Python</b>, <b>Power BI</b>, <b>ETL</b>, <b>Machine Learnign</b>.",
             enlace: "https://github.com/luiscxz/TFM-app/tree/main"
         },
+        // Jena Climate (modal 1)
+                {
+            imagenes: ["img/temp/Temperatura.png",  
+                "img/temp/decomposition.png",
+                "img/temp/zoom_decomposition.png",
+                "img/temp/fourier.png",
+                "img/temp/prediction_all.png",
+                "img/temp/zoom_prediction.png"
+            ], 
+            titulo: "Jena Climate",
+            descripcion: `El conjunto de datos <b>Jena Climate</b> comprende 14 <b>series temporales meteorológicas</b>, que incluyen 
+            variables como la temperatura del aire, presión atmosférica, humedad relativa, dirección del viento, 
+            entre otras. Estas observaciones fueron registradas con una <b>frecuencia de 10 minutos</b> y abarcan el 
+            periodo comprendido entre el <b>1 de enero de 2009</b> y el <b>31 de diciembre de 2016</b>. <br>
+            
+            El presente estudio se enfocó en la <b>predicción de la temperatura (en °C)</b> mediante el uso de una 
+            arquitectura de red neuronal <b>Long Short-Term Memory</b> (LSTM). Previo al entrenamiento del modelo, se 
+            llevó a cabo un <b>análisis exploratorio de los datos</b>, en el cual se identificó que la serie 
+            objetivo tenia <b>propiedades de estacionariedad</b>, es decir, coservaba sus propiedades estadísticas en el tiempo 
+            <b>(media y varianza constante)</b>. <br>
+            Asimismo, la aplicación de la <b>Transformada de Fourier</b> reveló la presencia de <b>patrones estacionales 
+            significativos</b>: uno de largo plazo, con una <b>periodicidad anual</b>, y otro de corto plazo, con una <b>periodicidad 
+            diaria de 24 horas</b>. <br>
+            En cuanto al desempeño del modelo, la red LSTM obtuvo un </b>coeficiente de determinación</b> (R²) de <b>0.99</b>
+            y un <b>error cuadrático medio</b> (RMSE) de <b>0.75 °C</b>, lo cual indica una alta capacidad predictiva, 
+            con una desviación promedio de tan solo 0.75 grados respecto a los valores reales en datos no observados.`,
+            herramientas:"<b>Python</b>, <b>Tensorflow</b>, <b>Keras</b>, <b>Jupyter notebook</b>.",
+            enlace: "https://github.com/luiscxz/To_linkedIn/blob/main/Temperatura_Jena_Climate.ipynb"
+        },
+        // PIMECLA modal(2)
         {
             imagenes: ["img/PIMECLA/Zonas de riesgo.jpg", 
                 "img/PIMECLA/Levantamiento.jpg", 
@@ -103,6 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
             herramientas:"<b>SQL</b>, <b>Python</b>, <b>ArcGIS</b>, <b>Matlab</b>, <b>Pix4D</b>, <b>Power BI</b>, <b>ETL</b>.",
             enlace: "https://github.com/tuusuario/proyecto2"
         },
+        // rio hobo (modal 3)
         {
             imagenes: ["img/riohobo/Curvas de nivel.jpg", 
                 "img/riohobo/area de estudio.jpg",
@@ -127,6 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
             herramientas:"<b>SQL</b>, <b>Python</b>, <b>ArcGIS</b>, <b>Pix4D</b>, <b>ETL</b>.",
             enlace: "https://github.com/tuusuario/proyecto2"
         },
+        // erfen (modal 4)
         {
             imagenes: ["img/erfen/masas de agua.png",
                 "img/erfen/profundidades_elegidas.png", 
