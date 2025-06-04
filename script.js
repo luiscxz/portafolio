@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
             enlace: "https://github.com/luiscxz/TFM-app/tree/main"
         },
         // Jena Climate (modal 1)
-                {
+        {
             imagenes: ["img/temp/Temperatura.png",  
                 "img/temp/decomposition.png",
                 "img/temp/zoom_decomposition.png",
@@ -109,7 +109,41 @@ document.addEventListener("DOMContentLoaded", () => {
             herramientas:"<b>Python</b>, <b>Tensorflow</b>, <b>Keras</b>, <b>Jupyter notebook</b>.",
             enlace: "https://github.com/luiscxz/To_linkedIn/blob/main/Temperatura_Jena_Climate.ipynb"
         },
-        // PIMECLA modal(2)
+        // Comercio electrónico brasileño modal(2)
+        {
+            imagenes: ["img/Comercio_elect_Br/0.png",  
+                "img/Comercio_elect_Br/1.png",
+                "img/Comercio_elect_Br/2.png",
+                "img/Comercio_elect_Br/3.png",
+                "img/Comercio_elect_Br/4.png",
+                "img/Comercio_elect_Br/5.png",
+                "img/Comercio_elect_Br/6.png",
+                "img/Comercio_elect_Br/7.png",
+                "img/Comercio_elect_Br/8.png",
+                "img/Comercio_elect_Br/9.png",
+                "img/Comercio_elect_Br/10.png",
+                "img/Comercio_elect_Br/11.png"
+            ], 
+            titulo: "Comercio Electrónico Brasileño",
+            descripcion: `Este caso de estudio analiza un <b>conjunto de datos público de Olist</b>, 
+            una plataforma brasileña de comercio electrónico que conecta pequeñas empresas con clientes. 
+            El <b>dataset abarca 100,000 pedidos</b> realizados entre 2016 y 2018, incluyendo información 
+            sobre <b>transacciones</b>, <b>envíos</b>, <b>ubicación de clientes</b> y <b>vendedores</b>, <b>reseñas de clientes</b> y más.<br>
+
+            <b>Objetivos Principales</b>:<br>
+            • <b>Análisis Exploratorio (EDA)</b>: Identificar patrones de compra, comportamiento del cliente y eficiencia logística.<br>
+            • <b>Predicción de Ventas</b>: Utilizar modelos de machine learning (Random Forest, XGBoost) para predecir ventas futuras basadas en datos históricos.<br>
+            • <b>Procesamiento de Lenguaje Natural (NLP)</b>: Analizar las reseñas de clientes para extraer insights sobre satisfacción y tendencias.<br>
+
+            <b>Metodología y Resultados Clave</b>:<br>
+            • <b>Integración de Datos</b>: Se unificaron 9 datasets mediante técnicas de merge en Pandas.<br>
+            • <b>Limpieza de Datos</b>: Se eliminaron duplicados (17.3% de registros) y outliers detectados con <b>Medcouple</b>.<br>
+            • <b>Modelado Predictivo</b>: Se entrenaron modelos como XGBRegressor, logrando un <b>R² de 0.90</b> en predicciones mensuales.<br>
+            • <b>NLP</b>: Análisis de sentimiento y topic modeling en reseñas para evaluar la experiencia del cliente.<br>`,
+            herramientas:"<b>Python</b>, <b>leia</b>,<b>Sklearn</b>, <b>XGBoost</b>, <b>Jupyter notebook</b>.",
+            enlace: "https://github.com/luiscxz/To_linkedIn/blob/main/Olist_caso_estudio.ipynb"
+        },
+        // PIMECLA modal(3)
         {
             imagenes: ["img/PIMECLA/Zonas de riesgo.jpg", 
                 "img/PIMECLA/Levantamiento.jpg", 
@@ -134,7 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
             herramientas:"<b>SQL</b>, <b>Python</b>, <b>ArcGIS</b>, <b>Matlab</b>, <b>Pix4D</b>, <b>Power BI</b>, <b>ETL</b>.",
             enlace: "https://github.com/tuusuario/proyecto2"
         },
-        // rio hobo (modal 3)
+        // rio hobo (modal 4)
         {
             imagenes: ["img/riohobo/Curvas de nivel.jpg", 
                 "img/riohobo/area de estudio.jpg",
@@ -159,7 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
             herramientas:"<b>SQL</b>, <b>Python</b>, <b>ArcGIS</b>, <b>Pix4D</b>, <b>ETL</b>.",
             enlace: "https://github.com/tuusuario/proyecto2"
         },
-        // erfen (modal 4)
+        // erfen (modal 5)
         {
             imagenes: ["img/erfen/masas de agua.png",
                 "img/erfen/profundidades_elegidas.png", 
